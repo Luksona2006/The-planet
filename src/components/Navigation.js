@@ -1,7 +1,6 @@
 import { Component } from 'react'
 import './Navigation.css'
 import burgerMenu from '../images/burger-menu.png'
-import {Link} from 'react-router-dom'
 
 const PlanetLinks = (props) => {
     return (
