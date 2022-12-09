@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.container-planets {
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 87px;
+    padding: 120px 165px;
+}
+
+.img-choicesMobile {
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    border-bottom: rgba(255, 255, 255, 0.2) 1px solid;
+    height: 52px;
+    
+}
+
+.choose-divsMobile h4 {
+    cursor: pointer;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 10px;
+    letter-spacing: 1.92857px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    margin: 20px 0;
+
+}
+
+.main-info {
+    width: 100%;
+    display: flex;
+    align-self: flex-end;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-div {
+    max-width: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.text-div h2 {
+    font-family: 'Antonio', sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 104px;
+    color: #FFFFFF;
+}
+
+.text-div h6 {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.text-div p {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.text-div span {
+    font-family: 'League Spartan', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.img-choices {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.choose-divs {
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    gap: 28px;
+    padding: 12px 28px;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.4s ease-out;
+}
+
+.choose-divs h5, .choose-divs h4 {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 2.57143px;
+    color: #FFFFFF;
+}
+
+.choose-divs h5 {
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.choose-divs:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.about-divs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 20px 22px; 
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.about h6 {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.about h3 {
+    font-family: 'Antonio', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: -1.5px;
+    color: #FFFFFF;
+}
+
+@media(max-width:1180px) {
+    .container-planets {
+        padding: 0 38px 48px 38px;
+        gap: 32px;
+    }
+    .main-info {
+        flex-direction: column;
+        gap: 80px;
+    }
+    .text-div {
+        max-width: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .text {
+        max-width: 340px;
+        width: 100%;
+    }
+
+    .main-info {
+        margin-top: 60px;
+    }
+}
+
+@media (max-width:920px) {
+    .about-divs {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width:620px) {
+    .main-info {
+        gap: 0px;
+        margin-top: 0px;
+    }
+    .text-div {
+        flex-direction: column
+    }
+    .text {
+        align-items: center;
+        text-align: center;
+    }
+    .about-divs {
+        grid-template-columns: 1fr;
+    }
+    .about {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    img {
+        width: 100%;
+        transform: scale(0.6);
+    }
+    .img-choices {
+        display: none;
+    }
+
+    .img-choicesMobile {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: rgba(255, 255, 255, 0.2) 1px solid;
+    }
+
+    .choose-divsMobile {
+        height: 100%;
+    }
+    
+}
+
+
