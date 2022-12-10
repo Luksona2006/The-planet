@@ -38,7 +38,7 @@ class Navigation extends Component {
         return (
             <div className="container">
                 <nav style={this.state.clicked ? {backgroundColor: "#070724"}  :  {backgroundColor: "transparent"}}>
-                    <a href="../src/index.html">
+                    <a href="/">
                         <h1>THE PLANETS</h1>
                     </a>
                     <ul>
